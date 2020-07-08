@@ -86,6 +86,7 @@
   letter-spacing: -0.6px;
 }
 
+<<<<<<< HEAD
 .news__title {
   margin-bottom: 4.4rem;
   color: #181818;
@@ -237,6 +238,8 @@
   padding: 2.4rem 10.5rem;
 }
 
+=======
+>>>>>>> 9567d7d44e1167df49d4dcb706ece193c2561352
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -5606,4 +5609,275 @@ body {
 .footer__inner .footer-adress p a + a,
 .footer__inner .footer-email p a + a {
   margin-top: 0.5rem;
+}
+
+body {
+  background-color: #f2f4f7;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1336px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ml--2 {
+  margin-left: -6.5rem;
+}
+
+.mr--2 {
+  margin-right: -6.5rem;
+}
+
+.fb-125 {
+  flex-basis: 125%;
+}
+
+.trigger-button {
+  background-color: #00843d;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2.6rem;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+}
+
+.split {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.split__line {
+  overflow: hidden;
+  height: 43.7rem;
+  margin-bottom: 3.6rem;
+}
+.split__line .split-left {
+  transform: skew(-9deg);
+  flex-basis: 90%;
+  background-color: #fafafa;
+}
+.split__line .split-left .split-media {
+  text-align: center;
+  transform: skew(9deg);
+}
+.split__line .split-right {
+  transform: skew(-9deg);
+  flex-basis: 52.5%;
+  background: #ffffff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  padding-top: 3.4rem;
+}
+.split__line .split-right .split-content {
+  transform: skew(9deg);
+  text-align: right;
+}
+.split__line .split-right .split-content > div {
+  margin-left: 7rem;
+  position: absolute;
+}
+.split__line .split-right .split-content > div h4 {
+  margin-top: -90%;
+  color: #181818;
+  mix-blend-mode: normal;
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 68rem;
+}
+.split__line .split-right .split-content > div p {
+  margin-top: -94%;
+  max-width: 31rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.6px;
+  line-height: 2.6rem;
+  color: #424242;
+}
+
+.services {
+  background-color: #fcfcfd;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.services__title {
+  margin-bottom: 6rem;
+}
+.services__title h3 {
+  color: #181818;
+  font-size: 5.6rem;
+  line-height: 6.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.services__title p span {
+  display: inline-block;
+  margin-right: 1.6rem;
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  color: #181818;
+  font-weight: 600;
+}
+.services__title p a {
+  position: relative;
+  text-decoration: none;
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  font-weight: 600;
+  color: #00843d;
+  padding-bottom: 0.8rem;
+}
+.services__title p a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0.2rem;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #00843d;
+}
+.services__inner .services-tile {
+  flex-basis: 31%;
+  max-width: 42rem;
+}
+.services__inner .services-tile .services-media {
+  overflow: hidden;
+  max-width: 42rem;
+  max-height: 19rem;
+}
+.services__inner .services-tile .services-media img {
+  width: 100%;
+}
+.services__inner .services-tile:hover .services-content {
+  background-color: #00a14b;
+  color: white;
+  border-color: transparent;
+}
+.services__inner .services-tile:hover .services-content button {
+  color: white;
+}
+.services__inner .services-tile .services-content {
+  padding: 3.6rem 2.8rem;
+  border-right: 0.1rem solid #d4dee3;
+  border-bottom: 1px solid #d4dee3;
+  border-left: 1px solid #d4dee3;
+  color: #181818;
+  margin-top: -0.1rem;
+  min-height: 34rem;
+  position: relative;
+  transition: background-color 0.25s linear, border-color 0.25s linear;
+}
+.services__inner .services-tile .services-content h4 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.services__inner .services-tile .services-content p {
+  max-width: 32rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.6px;
+}
+.services__inner .services-tile .services-content button {
+  position: absolute;
+  left: 2.8rem;
+  bottom: 3.6rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.services__inner .services-tile .services-content button span {
+  font-size: 2rem;
+}
+
+.news__title {
+  margin-bottom: 4.4rem;
+  color: #181818;
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 6.8rem;
+}
+.news__inner .news-tile {
+  flex-basis: 31%;
+  margin-bottom: 5rem;
+}
+.news__inner .news-tile .news-media {
+  overflow: hidden;
+}
+.news__inner .news-tile .news-media img {
+  height: 19rem;
+  width: 100%;
+}
+.news__inner .news-tile:hover .news-content .date {
+  color: #00843d;
+}
+.news__inner .news-tile:hover .news-content h4 {
+  color: #00843d;
+}
+.news__inner .news-tile:hover .news-content p {
+  color: #00843d;
+}
+.news__inner .news-tile:hover .news-content button {
+  color: #00843d;
+}
+.news__inner .news-tile .news-content {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  height: 31rem;
+  position: relative;
+}
+.news__inner .news-tile .news-content .date {
+  text-transform: uppercase;
+  color: #013763;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.news__inner .news-tile .news-content h4 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #181818;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.news__inner .news-tile .news-content p {
+  letter-spacing: -0.6px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  max-width: 33rem;
+  color: #424242;
+  margin-bottom: 2.6rem;
+}
+.news__inner .news-tile .news-content button {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.news__inner .news-tile .news-content button span {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 2rem;
 }
