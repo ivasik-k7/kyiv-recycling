@@ -94,7 +94,29 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\");\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(\"hello \");\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\");\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider.js */ \"./src/js/modules/slider.js\");\n/* harmony import */ var _modules_slider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_slider_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_mask_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/mask.js */ \"./src/js/modules/mask.js\");\n/* harmony import */ var _modules_mask_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_mask_js__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/mask.js":
+/*!********************************!*\
+  !*** ./src/js/modules/mask.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var mask = function mask(trigger) {\n  var setCursor = function setCursor(pos, elem) {\n    elem.focus();\n\n    if (elem.setSelectionRange) {\n      elem.setSelectionRange(pos, pos);\n    } else if (elem.createTextRange) {\n      var range = elem.createTextRange();\n      range.collapse = true;\n      range.moveEnd(\"character\", pos);\n      range.moveStart(\"character\", pos);\n      range.select();\n    }\n  };\n\n  function makeMask(e) {\n    var matrix = \"+38 (___) ___ __ __\";\n    var i = 0;\n    var def = matrix.replace(/\\D/g, \"\");\n    var val = this.value.replace(/\\D/g, \"\");\n\n    if (def.length >= val.length) {\n      val = def;\n    }\n\n    this.value = matrix.replace(/./g, function (a) {\n      return /[_\\d]/.test(a) && i < val ? val.charAt(i++) : i >= val.length ? \"\" : a;\n    });\n\n    if (e.type === \"blur\") {\n      if (this.value.length == 2) {\n        this.value = \"\";\n      }\n    } else {\n      setCursor(this.value.length, this);\n    }\n  }\n\n  var inputsList = document.querySelectorAll(trigger);\n  inputsList.forEach(function (inp) {\n    inp.addEventListener(\"input\", makeMask);\n    inp.addEventListener(\"focus\", makeMask);\n    inp.addEventListener(\"blur\", makeMask);\n  });\n};\n\nmask('input[type=\"tel\"]');\n\n//# sourceURL=webpack:///./src/js/modules/mask.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/slider.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/slider.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var prev = document.querySelector(\".prev-slide\");\nvar next = document.querySelector(\".next-slide\");\nvar slideList = document.querySelectorAll(\".media-slider__item\");\ndocument.querySelector(\".slides-length\").innerHTML = slideList.length;\nvar currentSlideHtml = document.querySelector(\".current-slide\");\nvar slideIndex = 1;\nconsole.log(slideList);\n\nvar showSlide = function showSlide(idx) {\n  if (idx > slideList.length) {\n    slideIndex = 1;\n  }\n\n  if (idx < 1) {\n    slideIndex = slideList.length;\n  }\n\n  slideList.forEach(function (slide) {\n    return slide.classList.add(\"hided-slide\");\n  });\n  slideList[slideIndex - 1].classList.remove(\"hided-slide\");\n};\n\nshowSlide(slideIndex);\n\nvar slideStep = function slideStep(step) {\n  showSlide(slideIndex += step);\n};\n\nprev.addEventListener(\"click\", function () {\n  slideStep(-1);\n  currentSlideHtml.innerHTML = slideIndex;\n});\nnext.addEventListener(\"click\", function () {\n  slideStep(1);\n  currentSlideHtml.innerHTML = slideIndex;\n});\nshowSlide(slideIndex);\n\n//# sourceURL=webpack:///./src/js/modules/slider.js?");
 
 /***/ }),
 
