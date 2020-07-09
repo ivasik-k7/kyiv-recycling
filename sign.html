@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ПрофПереробка | Співпраця</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bundle.css" />
+    </head>
+    <body>
+        <header class="header bg-semitransparent-black position-static">
+            <div class="container">
+                <div class="header__inner d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="img/header-logo.svg" alt="header-logo" />
+                        </a>
+                    </div>
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="index.html">Про нас</a></li>
+                            <li><a href="#services">Послуги</a></li>
+                            <li><a href="#clients">Клієнти</a></li>
+                            <li><a href="news.html">Новини</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
+                            <li><a href="contacts.html">Зв’язатись</a></li>
+                        </ul>
+                        <a href="#" class="header-nav__icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 0V18H18V0H0ZM12 5.25H10.5577C10.0957 5.25 9.75 5.439 9.75 5.91675V6.75H12L11.8207 9H9.75V15H7.5V9H6V6.75H7.5V5.30775C7.5 3.79125 8.298 3 10.0958 3H12V5.25Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="contract">
+            <div class="container">
+                <div class="contract__inner">
+                    <h3 class="contract-title">
+                        Заявка на співпрацю
+                    </h3>
+                    <form class="contract-form">
+                        <h5>Інформація про замовника</h5>
+                        <input type="text" required name="jurName" placeholder="Юридична назва підприємства, установи, організації, ФОП" />
+                        <input type="text" required name="jurAdress" placeholder="Юридична адреса" />
+                        <input type="text" required name="postAdress" placeholder="Поштова адреса" />
+                        <input type="text" required name="factoAdress" placeholder="Фактична адреса" />
+                        <input type="text" required name="bankRek" placeholder="Банківський рахунок" />
+                        <input type="text" required name="bankName" placeholder="Назва банку" />
+                        <input type="tel" required name="bankCode" placeholder="Код банку" />
+                        <input type="tel" required name="edrpouCode" placeholder="Код за ЄДРПОУ" />
+                        <select name="paidType" required>
+                            <option value="" disabled selected>Податковий статус платника податку на прибуток</option>
+                            <option value="0">Платник на загальних умовах</option>
+                            <option value="1">Єдиний податок</option>
+                        </select>
+                        <input type="text" required name="paidINP" placeholder="ІПН платника ПДВ" />
+                        <input type="text" required name="respPersonName" placeholder="Уповноважена особа, посада, що укладає Договір (ПІпБ, повністю)" />
+                        <select name="documentType" required>
+                            <option value="" disabled selected>На підставі якого документа діє</option>
+                            <option value="1">Документ 1</option>
+                            <option value="2">Документ 2</option>
+                        </select>
+
+                        <h5>Інформація для розрахунку та формування графіку вивозу</h5>
+                        <input type="text" required name="foundaryType" placeholder="Категорія закладу, назва, торгівельна марка" />
+                        <input type="text" required name="jobType" placeholder="Вид діяльності" />
+                        <input type="number" required name="jobArea" placeholder="Загальна площа закладу" />
+                        <input type="number" required name="ammountOf" placeholder="Кількість співробітників" />
+                        <input type="number" required name="sittingPlaceAmmount" placeholder="Кількість посадочних місць в закладі" />
+                        <input type="number" required name="contAmmount" placeholder="Кількість контейнерів" />
+                        <input type="text" required name="contAdress" placeholder="Адреса(-и) контейнерного(-их) майданчика(-ів)" />
+                        <input type="text" required name="freeEnter" placeholder="Можливість вільного під’їзду до контейнеру (шлагбаум, пульт, ключі і тд.)" />
+                        <select name="paidStatus" required>
+                            <option value="" disabled selected>Податковий статус платника податку на прибуток</option>
+                            <option value="1">Статус 1</option>
+                            <option value="2">Статус 2</option>
+                        </select>
+                        <input type="number" required name="startingDate" placeholder="Початок обслуговування, дата" />
+                        <h5>Контактна особа</h5>
+                        <h6>відповідальна за здійснення господарської операції та коректність оформлення анкет</h6>
+                        <input type="text" required name="contactName" placeholder="ПІпБ" />
+                        <input type="tel" required name="contactMobile" placeholder="Мобільний телефон, viber" />
+                        <input type="number" name="contactFax" placeholder="Контактний телефон, номер факсу" />
+                        <input type="email" required name="contactEnauk" placeholder="Е-mail" />
+                        <h5>Документи</h5>
+                        <h6>завантажте файли розміром <span>до 5 мб</span> в форматах <span>.pdf</span>, <span>.jpg</span>, <span>.png</span></h6>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-adress">
+                        <h4>Адреса:</h4>
+                        <p>
+                            <a href="https://goo.gl/maps/R8sSZimmnGRyLEjq8"> 21000, Україна, Житомир <span>вул. Шевченка 17/2</span> </a>
+                        </p>
+                    </div>
+                    <div class="footer-tel">
+                        <h4>Телефони</h4>
+                        <p>
+                            <a href="tel:+38 (096) 08 000 19">+38 (096) 08 000 19</a>
+                            <a href="tel:+38 (096) 08 000 20">+38 (096) 08 000 20</a>
+                        </p>
+                    </div>
+                    <div class="footer-email">
+                        <h4>E-mail</h4>
+                        <p>
+                            <a href="mailto:dogovor@pererobka.com">dogovor@pererobka.com</a>
+                            <a href="mailto:profpererob@gmail.com">profpererob@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0" nonce="0aeTi4Vy"></script>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>
