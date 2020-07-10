@@ -4900,6 +4900,7 @@ body {
   margin-top: 3.2rem;
   border: 1px solid #d4dee3;
   outline: 1px solid transparent;
+  background-color: transparent;
   width: 100%;
   font-size: 2.2rem;
   line-height: 2.8rem;
@@ -4917,4 +4918,97 @@ body {
 .contract__inner .contract-form select option {
   letter-spacing: -0.04em;
   color: #181818;
+}
+.contract__inner .contract-form .table {
+  margin-top: 3.2rem;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04em;
+  color: #181818;
+}
+.contract__inner .contract-form .table-col {
+  border: 1px solid #d4dee3;
+  flex: 1;
+}
+.contract__inner .contract-form .table-col .table-title {
+  border-bottom: 1px solid #d4dee3;
+  padding: 1.6rem 2.8rem;
+}
+.contract__inner .contract-form .table-col .inp-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.contract__inner .contract-form .table-col .inp-wrap input {
+  width: 55%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #acb7c2;
+  color: #181818;
+  margin-top: 0;
+}
+.contract__inner .contract-form .table-col .mw-25 {
+  min-width: 25rem;
+}
+.contract__inner .contract-form .downloads {
+  padding-top: 2.3rem;
+  padding-bottom: 9.2rem;
+}
+.contract__inner .contract-form .downloads-file {
+  margin-bottom: 4.3rem;
+}
+.contract__inner .contract-form .downloads input[type=file] {
+  width: 0.01rem;
+  height: 0.01rem;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  outline: none;
+}
+.contract__inner .contract-form .downloads input[type=file]:focus + label {
+  outline: 1px dotted #00a14b;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.contract__inner .contract-form .downloads label {
+  display: flex;
+  align-items: center;
+  background-color: #00843d;
+  padding: 1.1rem 2.8rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: 0.25s linear background-color, color 0.25s linear;
+}
+.contract__inner .contract-form .downloads label svg {
+  margin-right: 1rem;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.contract__inner .contract-form .downloads label svg path {
+  transition: 0.3s linear fill;
+  fill: white;
+}
+.contract__inner .contract-form .downloads label:hover {
+  background-color: transparent;
+  color: #00a14b;
+}
+.contract__inner .contract-form .downloads label:hover svg path {
+  fill: #00a14b;
+}
+.contract__inner .contract-form .downloads p {
+  max-width: 60rem;
+  margin-left: 3.1rem;
+  letter-spacing: -0.04em;
+  color: #181818;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
 }
