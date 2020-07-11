@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/bundle.css" />
     </head>
     <body>
-        <header class="header bg-brand-black position-static">
+        <header class="header bg-brand-black position-static" id="header">
             <div class="container">
                 <div class="header__inner d-flex justify-content-between align-items-center">
                     <div class="header-logo">
@@ -19,13 +19,13 @@
                     <nav class="header-nav">
                         <ul>
                             <li><a href="index.html">Про нас</a></li>
-                            <li><a href="#services">Послуги</a></li>
-                            <li><a href="#clients">Клієнти</a></li>
+                            <li><a class="anch" href="#services">Послуги</a></li>
+                            <li><a class="anch" href="#clients">Клієнти</a></li>
                             <li><a href="news.html">Новини</a></li>
-                            <li><a href="contacts.html">Контакти</a></li>
-                            <li><a href="contacts.html">Зв’язатись</a></li>
+                            <li><a href="404.html">Контакти</a></li>
+                            <li><a class="anch" href="#footer">Зв’язатись</a></li>
                         </ul>
-                        <a href="#" class="header-nav__icon">
+                        <a href="#" target="_blank" class="header-nav__icon">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0 0V18H18V0H0ZM12 5.25H10.5577C10.0957 5.25 9.75 5.439 9.75 5.91675V6.75H12L11.8207 9H9.75V15H7.5V9H6V6.75H7.5V5.30775C7.5 3.79125 8.298 3 10.0958 3H12V5.25Z"
@@ -125,13 +125,13 @@
                 </section>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer-adress">
                         <h4>Адреса:</h4>
                         <p>
-                            <a href="https://goo.gl/maps/R8sSZimmnGRyLEjq8"> 21000, Україна, Житомир <span>вул. Шевченка 17/2</span> </a>
+                            <a target="_blank" href="https://goo.gl/maps/R8sSZimmnGRyLEjq8"> 21000, Україна, Житомир <span>вул. Шевченка 17/2</span> </a>
                         </p>
                     </div>
                     <div class="footer-tel">

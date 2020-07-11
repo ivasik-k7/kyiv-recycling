@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/bundle.css" />
     </head>
     <body>
-        <header class="header bg-semitransparent-black position-static">
+        <header class="header bg-brand-black position-static" id="header">
             <div class="container">
                 <div class="header__inner d-flex justify-content-between align-items-center">
                     <div class="header-logo">
@@ -18,11 +18,11 @@
                     <nav class="header-nav">
                         <ul>
                             <li><a href="index.html">Про нас</a></li>
-                            <li><a href="#services">Послуги</a></li>
-                            <li><a href="#clients">Клієнти</a></li>
+                            <li><a class="anch" href="index.html/#services">Послуги</a></li>
+                            <li><a class="anch" href="index.html/#clients">Клієнти</a></li>
                             <li><a href="news.html">Новини</a></li>
-                            <li><a href="contacts.html">Контакти</a></li>
-                            <li><a href="contacts.html">Зв’язатись</a></li>
+                            <li><a href="404.html">Контакти</a></li>
+                            <li><a class="anch" href="#footer">Зв’язатись</a></li>
                         </ul>
                         <a href="#" target="_blank" class="header-nav__icon">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,22 +48,26 @@
                         <input type="text" required name="jurAdress" placeholder="Юридична адреса" />
                         <input type="text" required name="postAdress" placeholder="Поштова адреса" />
                         <input type="text" required name="factoAdress" placeholder="Фактична адреса" />
-                        <input type="text" required name="bankRek" placeholder="Банківський рахунок" />
+                        <input type="number" required name="bankRek" placeholder="Банківський рахунок" />
                         <input type="text" required name="bankName" placeholder="Назва банку" />
-                        <input type="tel" required name="bankCode" placeholder="Код банку" />
-                        <input type="tel" required name="edrpouCode" placeholder="Код за ЄДРПОУ" />
-                        <select name="paidType" required>
-                            <option value="" disabled selected>Податковий статус платника податку на прибуток</option>
-                            <option value="0">Платник на загальних умовах</option>
-                            <option value="1">Єдиний податок</option>
-                        </select>
-                        <input type="text" required name="paidINP" placeholder="ІПН платника ПДВ" />
+                        <input type="number" required name="bankCode" placeholder="Код банку" />
+                        <input type="number" required name="edrpouCode" placeholder="Код за ЄДРПОУ" />
+                        <div class="custom-select">
+                            <select name="paidType" required class="select">
+                                <option value="" disabled selected>Податковий статус платника податку на прибуток</option>
+                                <option value="0">Платник на загальних умовах</option>
+                                <option value="1">Єдиний податок</option>
+                            </select>
+                        </div>
+                        <input type="number" required name="paidINP" placeholder="ІПН платника ПДВ" />
                         <input type="text" required name="respPersonName" placeholder="Уповноважена особа, посада, що укладає Договір (ПІпБ, повністю)" />
-                        <select name="documentType" required>
-                            <option value="" disabled selected>На підставі якого документа діє</option>
-                            <option value="1">Документ 1</option>
-                            <option value="2">Документ 2</option>
-                        </select>
+                        <div class="custom-select">
+                            <select name="documentType" required class="select">
+                                <option value="0">На підставі якого документа діє</option>
+                                <option value="1">Документ 1</option>
+                                <option value="2">Документ 2</option>
+                            </select>
+                        </div>
 
                         <h5>Інформація для розрахунку та формування графіку вивозу</h5>
                         <input type="text" required name="foundaryType" placeholder="Категорія закладу, назва, торгівельна марка" />
@@ -74,11 +78,13 @@
                         <input type="number" required name="contAmmount" placeholder="Кількість контейнерів" />
                         <input type="text" required name="contAdress" placeholder="Адреса(-и) контейнерного(-их) майданчика(-ів)" />
                         <input type="text" required name="freeEnter" placeholder="Можливість вільного під’їзду до контейнеру (шлагбаум, пульт, ключі і тд.)" />
-                        <select name="paidStatus" required>
-                            <option value="" disabled selected>Податковий статус платника податку на прибуток</option>
-                            <option value="1">Статус 1</option>
-                            <option value="2">Статус 2</option>
-                        </select>
+                        <div class="custom-select">
+                            <select name="paidStatus" required class="select">
+                                <option value="0">Податковий статус платника податку на прибуток</option>
+                                <option value="1">Статус 1</option>
+                                <option value="2">Статус 2</option>
+                            </select>
+                        </div>
                         <input type="number" required name="startingDate" placeholder="Початок обслуговування, дата" />
                         <h5>Контактна особа</h5>
                         <h6>відповідальна за здійснення господарської операції та коректність оформлення анкет</h6>
@@ -231,7 +237,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer-adress">
